@@ -11,7 +11,7 @@ import {
 import { resetTimer, startTimer } from "./modules/time-management/timer.js";
 import { resetTapingStats } from "./modules/typing-stats/update.js";
 import { resetTypingStatsInUi, checkTypingStats } from "./modules/typing-stats/ui.js";
-import { currentTextData, timer } from "./config.js";
+import { currentTextData, timer, text } from "./config.js";
 import { setTextOpacityInUI } from "./modules/text-management/ui.js";
 
 restartBtn.addEventListener("click", () => {
@@ -34,7 +34,7 @@ document.addEventListener("keydown", (e) => {
   else if (["Escape"].includes(e.key)) resetCurrentTextData();
 });
 
-typingText.addEventListener("touchstart", () => {
+text.addEventListener("touchstart", () => {
   typingText.focus();
 });
 
