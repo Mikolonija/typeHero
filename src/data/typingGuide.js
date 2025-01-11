@@ -50,7 +50,7 @@ const typingGuide = [
     id: 9,
     title: "📱 Mobile Compatibility",
     description:
-      "Please note that this typing functionality works only on desktop computers and may not function correctly on mobile applications.",
+      "Please note that this typing functionality may not work correctly on mobile devices.",
   },
 ];
 
