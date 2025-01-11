@@ -46,12 +46,6 @@ const typingGuide = [
     description:
       "Words are confirmed when the 'Space' character is detected in the text. The word is checked, and if everything is correct and the space character exists at the end, it is confirmed. The last word is counted even without the 'Space' character.",
   },
-  {
-    id: 9,
-    title: "📱 Mobile Compatibility",
-    description:
-      "Please note that this typing functionality may not work correctly on mobile devices.",
-  },
 ];
 
 export { typingGuide };
