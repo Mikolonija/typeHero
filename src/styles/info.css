@@ -1,0 +1,39 @@
+@import "variables.css";
+
+.info-container {
+    text-align: center;
+    padding: 90px var(--spacing-medium) var(--spacing-xx-large) var(--spacing-medium);
+}
+
+.info-container-description {
+    text-transform: uppercase;
+    padding: 0 0 var(--spacing-medium) 0;
+}
+
+.info-container-cards {
+    gap: var(--spacing-medium);
+    display: grid;
+    padding: var(--spacing-xx-large) var(--spacing-medium) 0 var(--spacing-medium);
+}
+
+.info-container-card {
+    background: var(--primary-color-white);
+    border-radius: var(--radius-small);
+    padding: var(--spacing-large);
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.info-container-card-description {
+    line-height: 1.2;
+}
+
+.info-container-card-title {
+    line-height: 1.2;
+    padding: 0 0 var(--spacing-medium) 0;
+}
+
+@media only screen and (max-width: 740px) {
+    .info-container-cards {
+        padding: 0 var(--spacing-medium) 0 var(--spacing-medium);
+    }
+}

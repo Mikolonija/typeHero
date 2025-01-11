@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Test and improve your typing skills with TypeHERO, an interactive typing speed test." />
+  <meta name="keywords" content="typing test, typing speed, typing skills, accuracy, WPM" />
+  <meta name="author" content="Modestas Bieliauskas" />
+  <link href="src/styles/reset.css" type="text/css" rel="stylesheet" />
+  <link href="src/styles/global.css" type="text/css" rel="stylesheet" />
+  <link href="src/styles/layout.css" type="text/css" rel="stylesheet" />
+  <link href="src/styles/font.css" type="text/css" rel="stylesheet" />
+  <link href="src/styles/header.css" type="text/css" rel="stylesheet" />
+  <link href="src/styles/info.css" type="text/css" rel="stylesheet" />
+  <link href="src/styles/footer.css" type="text/css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link href="src/assets/logo.ico" rel="icon" />
+  <script src="src/guide.js" type="module"></script>
+  <title>TypeHero</title>
+</head>
+
+<body>
+  <div class="layout-container">
+    <header>
+      <div class="g-container">
+        <nav class="header-navBar">
+          <div class="header-navBar-logo-container layout-left-center">
+            <a class="layout-left-center" aria-label="Go to Home page" href="/index.html">
+              <img class="header-navBar-logo" width="45" height="45" src="src/assets/logo.ico"
+                alt="website TypeHero logo" />
+              <h2 class="header-navBar-logo-text-hide-mobile font-montserrat-22-bold">
+                TypeHERO
+              </h2>
+            </a>
+          </div>
+          <ul class="header-navBar-list layout-left-center">
+            <li>
+              <a aria-label="Go to Home page" href="/index.html"
+                class="header-navBar-link font-montserrat-16-bold">Home</a>
+            </li>
+            <li>
+              <a onclick="return false;" href="/guide.html" aria-label="Go to Help page"
+                class="header-navBar-link-active font-montserrat-16-bold">Guide</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="g-container g-container-spacing">
+        <section class="info-container">
+          <p class="info-container-description font-montserrat-16-regular">
+            Welcome to the TypeHERO Guide
+          </p>
+          <h1 class="font-montserrat-48-bold">Unlock the TypeHERO Guide</h1>
+        </section>
+        <div id="guide-container" class="info-container-cards"></div>
+      </div>
+    </main>
+  </div>
+  <footer>
+    <div class="g-container">
+      <div class="footer-copyright-container layout-left-center">
+        <p class="font-montserrat-12-regular">
+          © <span id="copyright-year"></span> Modys. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

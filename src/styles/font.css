@@ -1,0 +1,47 @@
+.font-montserrat-48-bold {
+    font-family: "Montserrat", sans-serif;
+    font-size: clamp(2.5rem, 5vw, 3rem);
+    font-weight: 600;
+}
+
+.font-montserrat-36-bold {
+    font-family: "Montserrat", sans-serif;
+    font-size: clamp(1.5rem, 4vw, 2.25rem);
+    font-weight: 600;
+}
+
+.font-montserrat-24-bold {
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.font-montserrat-22-bold {
+    font-family: "Montserrat", sans-serif;
+    font-size: clamp(1rem, 2.5vw, 1.375rem);
+    font-weight: 700;
+}
+
+.font-montserrat-16-bold {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.font-montserrat-16-regular {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.font-montserrat-12-bold {
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.font-montserrat-12-regular {
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.75rem;
+    font-weight: 400;
+}

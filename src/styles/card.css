@@ -1,0 +1,89 @@
+@import "variables.css";
+
+.cards-container {
+    gap: var(--spacing-xx-large);
+    flex-wrap: wrap;
+    padding: 0 var(--spacing-xx-large) var(--spacing-xx-large) var(--spacing-xx-large);
+}
+
+.card-radius {
+    position: relative;
+    border-radius: 50%;
+}
+
+.card-radius-progress-border {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    background: conic-gradient(var(--primary-color-yellow) 0% calc(var(--progress) * 1%),
+            var(--primary-color-dark-opacity) calc(var(--progress) * 1%) 100%);
+}
+
+.card-radius-progress-inner {
+    left: 4px;
+    top: 4px;
+    width: calc(100% - var(--spacing-small));
+    height: calc(100% - var(--spacing-small));
+    border-radius: 50%;
+    background: var(--primary-color-white);
+    position: absolute;
+    z-index: 2;
+}
+
+.card-radius-size {
+    height: 110px;
+    min-width: 110px;
+}
+
+.cards-child-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-medium);
+}
+
+.card {
+    background: var(--primary-color-white);
+    border-radius: var(--radius-medium);
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.card-text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.card-size {
+    height: 100px;
+    min-width: 100px;
+}
+
+@media only screen and (max-width: 740px) {
+    .cards-container {
+        gap: var(--spacing-medium);
+        padding: 0 var(--spacing-medium) 0 var(--spacing-medium);
+    }
+
+    .cards-parent-container {
+        order: 1;
+    }
+
+    .cards-child-container {
+        width: 100%;
+    }
+
+    .card {
+        flex: 1;
+    }
+
+    .card-size {
+        height: 90px;
+        min-width: 90px;
+    }
+}

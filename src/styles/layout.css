@@ -1,0 +1,21 @@
+.layout-container {
+    flex: 1;
+}
+
+.layout-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.layout-left-center {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.layout-top-center {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}

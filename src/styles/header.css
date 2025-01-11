@@ -1,0 +1,59 @@
+@import "variables.css";
+
+header {
+    position: fixed;
+    background: var(--primary-color-light-opacity);
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 5;
+    backdrop-filter: blur(8px);
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.header-navBar {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: var(--spacing-small);
+}
+
+.header-navBar-logo-container {
+    height: 90px;
+}
+
+.header-navBar-logo {
+    margin: 0 var(--spacing-small) 0 0;
+}
+
+.header-navBar-list {
+    gap: var(--spacing-small);
+}
+
+ul li>a {
+    display: inline-block;
+    text-align: center;
+    border-radius: var(--radius-small);
+    padding: 10px var(--spacing-small);
+    min-width: 60px;
+}
+
+.header-navBar-link:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.header-navBar-link {
+    border: solid 2px var(--primary-color-dark);
+}
+
+.header-navBar-link-active {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor: context-menu;
+    border: solid 2px var(--primary-color-yellow);
+    background-color: var(--primary-color-yellow);
+}
+
+@media only screen and (max-width: 360px) {
+    .header-navBar-logo-text-hide-mobile {
+        display: none;
+    }
+}

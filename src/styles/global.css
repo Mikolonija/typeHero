@@ -1,0 +1,65 @@
+@import "variables.css";
+
+.g-container {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-medium);
+    animation: fadeIn 1s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.g-container-spacing {
+    padding: var(--spacing-xx-large) 0;
+}
+
+.g-loader {
+    width: 48px;
+    height: 48px;
+    border: 4px solid var(--primary-color-yellow);
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    position: absolute;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.g-correct-character {
+    color: var(--correct-character-color);
+    background: var(--correct-character-bg);
+}
+
+.g-incorrect-character {
+    color: var(--incorrect-character-color);
+    background: var(--incorrect-character-bg);
+}
+
+.g-performance-even {
+    color: var(--performance-even-color)
+}
+
+.g-performance-worse {
+    color: var(--performance-worse-color)
+}
+
+.g-performance-better {
+    color: var(--performance-better-color)
+}

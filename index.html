@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Test and improve your typing skills with TypeHERO, an interactive typing speed test." />
+  <meta name="keywords" content="typing test, typing speed, typing skills, accuracy, WPM" />
+  <meta name="author" content="Modestas Bieliauskas" />
+  <link href="src/styles/reset.css" type="text/css" rel="stylesheet" />
+  <link href="src/styles/global.css" type="text/css" rel="stylesheet" />
+  <link href="src/styles/layout.css" type="text/css" rel="stylesheet" />
+  <link href="src/styles/font.css" type="text/css" rel="stylesheet" />
+  <link href="src/styles/header.css" type="text/css" rel="stylesheet" />
+  <link href="src/styles/info.css" type="text/css" rel="stylesheet" />
+  <link href="src/styles/card.css" type="text/css" rel="stylesheet" />
+  <link href="src/styles/typing.css" type="text/css" rel="stylesheet" />
+  <link href="src/styles/table.css" type="text/css" rel="stylesheet" />
+  <link href="src/styles/footer.css" type="text/css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link href="src/assets/logo.ico" rel="icon" />
+  <script src="src/index.js" type="module"></script>
+  <title>TypeHero</title>
+</head>
+
+<body>
+  <div class="layout-container">
+    <header>
+      <div class="g-container">
+        <nav class="header-navBar">
+          <div class="header-navBar-logo-container layout-left-center">
+            <a class="layout-left-center" aria-label="Go to Home page" href="/index.html">
+              <img class="header-navBar-logo" width="45" height="45" src="src/assets/logo.ico"
+                alt="website TypeHero logo" />
+              <h2 class="font-montserrat-22-bold header-navBar-logo-text-hide-mobile">
+                TypeHERO
+              </h2>
+            </a>
+          </div>
+          <ul class="header-navBar-list layout-left-center">
+            <li>
+              <a aria-label="Go to Home page" href="/index.html" onclick="return false;"
+                class="header-navBar-link-active font-montserrat-16-bold">Home</a>
+            </li>
+            <li>
+              <a aria-label="Go to guide page" href="/guide.html"
+                class="header-navBar-link font-montserrat-16-bold">Guide</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="g-container g-container-spacing">
+        <section class="info-container">
+          <p class="info-container-description font-montserrat-16-regular">
+            Typing speed test
+          </p>
+          <h1 class="font-montserrat-48-bold">Improve your typing skills</h1>
+        </section>
+        <div class="cards-container layout-center">
+          <div class="cards-parent-container">
+            <div class="card-radius card-radius-size">
+              <div class="card-radius-progress-border" id="progress-border">
+                <div class="card-radius-progress-inner layout-center">
+                  <div class="card-text-container">
+                    <h2 class="font-montserrat-36-bold" id="second-text">60</h2>
+                    <span class="font-montserrat-12-regular">Seconds</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cards-child-container layout-center">
+            <div class="card card-size">
+              <div class="card-text-container">
+                <h2 class="font-montserrat-36-bold" id="chars-text">0</h2>
+                <span class="card-description font-montserrat-12-regular">Chars</span>
+              </div>
+            </div>
+            <div class="card card-size">
+              <div class="card-text-container">
+                <h2 class="font-montserrat-36-bold" id="mistakes-text">0</h2>
+                <span class="card-description font-montserrat-12-regular">Mistakes</span>
+              </div>
+            </div>
+            <div class="card card-size">
+              <div class="card-text-container">
+                <h2 class="font-montserrat-36-bold" id="wpm-text">0</h2>
+                <span class="card-description font-montserrat-12-regular">WPM</span>
+              </div>
+            </div>
+            <div class="card card-size">
+              <div class="card-text-container">
+                <h2 class="font-montserrat-36-bold" id="accuracy-text">0</h2>
+                <span class="card-description font-montserrat-12-regular">Accuracy</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="typing-container">
+          <div id="typing-box" class="typing-box">
+            <div class="g-loader" id="text-loader"></div>
+            <div class="typing-text font-montserrat-16-regular" id="text"></div>
+            <input autocomplete="off" type="text" class="typing-input" id="typing-text" aria-label="Typing input" />
+          </div>
+          <button aria-label="Restart text" disabled id="restart-btn"
+            class="typing-restart-btn font-montserrat-16-bold">
+            Restart
+          </button>
+        </div>
+        <div class="table-container layout-center" id="typing-stats-table">
+          <table class="table">
+            <thead>
+              <tr class="font-montserrat-12-bold">
+                <th class="table-column-first">Timestamp</th>
+                <th class="table-hide-column-tablet table-column">Chars</th>
+                <th class="table-hide-column-tablet table-column">Mistakes</th>
+                <th class="table-hide-column-mobile table-column">WPM</th>
+                <th class="table-hide-column-tablet table-column">Accuracy</th>
+                <th class="table-column-last">Performance</th>
+              </tr>
+            </thead>
+            <tbody class="font-montserrat-12-regular" id="typing-stats-row"></tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+  </div>
+  <footer>
+    <div class="g-container">
+      <div class="footer-copyright-container layout-left-center">
+        <p class="font-montserrat-12-regular">
+          © <span id="copyright-year"></span> Modys. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
