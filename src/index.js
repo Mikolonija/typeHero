@@ -1,5 +1,5 @@
 import { updateCopyrightYear } from "./modules/copyright.js";
-import { typingText, restartBtn } from "./utils/domElements.js";
+import { typingText, restartBtn, text } from "./utils/domElements.js";
 import {
   updateTyping,
   checkTypingCompletionStatus,
@@ -34,7 +34,7 @@ document.addEventListener("keydown", (e) => {
   else if (["Escape"].includes(e.key)) resetCurrentTextData();
 });
 
-document.addEventListener("touchstart", () => {
+text.addEventListener("touchstart", () => {
   typingText.focus();
 });
 
