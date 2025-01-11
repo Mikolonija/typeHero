@@ -34,7 +34,7 @@ document.addEventListener("keydown", (e) => {
   else if (["Escape"].includes(e.key)) resetCurrentTextData();
 });
 
-document.addEventListener("touchstart", () => {
+typingText.addEventListener("touchstart", () => {
   typingText.focus();
 });
 
