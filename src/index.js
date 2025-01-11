@@ -34,6 +34,10 @@ document.addEventListener("keydown", (e) => {
   else if (["Escape"].includes(e.key)) resetCurrentTextData();
 });
 
+document.addEventListener("touchstart", () => {
+  typingText.focus();
+});
+
 const resetCurrentTextData = () => {
   setTextOpacityInUI(1);
   displayTextData(currentTextData);
