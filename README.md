@@ -59,6 +59,8 @@ git clone https://github.com/Mikolonija/typeHero.git
 
 ## Website link
 
+[https://type-hero-sigma.vercel.app/](https://type-hero-sigma.vercel.app/)
+
 ## Text api
 
 - `Endpoint`: https://random-word-form.herokuapp.com/random/noun?count=50
