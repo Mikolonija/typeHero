@@ -50,13 +50,13 @@ const setCurrentTextData = (textData) => {
 
 const timer = {
   timerStarted: false,
-  secondLeft: 50,
-  totalSeconds: 50,
+  secondLeft: 60,
+  totalSeconds: 60,
   countdown: 0,
   reset() {
     this.timerStarted = false;
-    this.secondLeft = 50;
-    this.totalSeconds = 50;
+    this.secondLeft = 60;
+    this.totalSeconds = 60;
   },
 };
 
