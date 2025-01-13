@@ -10,6 +10,7 @@ import {
 } from "./ui.js";
 
 const displayTextData = (textData) => {
+  setCurrentTextData(textData);
   addElementClass(typingBox, [typingBoxCls.layoutTopCenter]);
   removeElementClass(typingBox, [typingBoxCls.layoutCenter]);
   outputTextInUI(textData.join(" "));
@@ -20,14 +21,8 @@ const displayTextData = (textData) => {
 const fetchTextData = async () => {
   displayTypingBoxUI();
   const { loading, data: textData, error } = await callApi(textAPI);
-  if (error && !loading) {
-    displayTextData(offlineText);
-    setCurrentTextData(offlineText);
-  }
-  if (textData && !loading) {
-    displayTextData(textData);
-    setCurrentTextData(textData);
-  }
+  if (error && !loading) displayTextData(offlineText);
+  if (textData && !loading) displayTextData(textData);
 };
 
 export { fetchTextData, displayTextData };
