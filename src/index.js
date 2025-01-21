@@ -52,7 +52,6 @@ const resetPage = () => {
   resetTapingStats();
   resetTypingStatsInUi();
   fetchTextData();
-  checkTypingStats();
 };
 
 document.addEventListener("DOMContentLoaded", () => {
