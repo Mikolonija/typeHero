@@ -42,16 +42,19 @@ const resetCurrentTextData = () => {
   setTextOpacityInUI(1);
   displayTextData(currentTextData);
   resetTimer();
-  resetTapingStats();
-  resetTypingStatsInUi();
+  resetStats();
 };
 
 const resetPage = () => {
   setTextOpacityInUI(1);
   resetTimer();
+  resetStats();
+  fetchTextData();
+};
+
+const resetStats = () => {
   resetTapingStats();
   resetTypingStatsInUi();
-  fetchTextData();
 };
 
 document.addEventListener("DOMContentLoaded", () => {
