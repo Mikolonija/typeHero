@@ -61,6 +61,10 @@ git clone https://github.com/Mikolonija/typeHero.git
 
 [https://type-hero-sigma.vercel.app/](https://type-hero-sigma.vercel.app/)
 
+## Data Storage
+
+- `Stats are stored in localStorage.`
+
 ## Text api
 
 - `Endpoint`: https://random-word-form.herokuapp.com/random/noun?count=50
