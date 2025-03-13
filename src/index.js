@@ -30,7 +30,7 @@ document.addEventListener("keydown", (e) => {
   typingText.focus();
   if (["Shift", "ArrowLeft", "ArrowRight"].includes(e.key)) e.preventDefault();
   else if (e.ctrlKey || e.metaKey) e.preventDefault();
-  else if (["Enter"].includes(e.key)) resetPage();
+  else if (["Enter"].includes(e.key) && !restartBtn.disabled) resetPage();
   else if (["Escape"].includes(e.key)) resetCurrentTextData();
 });
 
