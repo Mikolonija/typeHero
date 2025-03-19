@@ -1,4 +1,4 @@
-const textAPI = "https://random-word-api.vercel.app/api?words=42";
+const textAPI = "https://random-word-api.vercel.app/api?words=50";
 
 const endTimeMessage =
   "Time's up! Your session has ended. Click 'Restart' to load new text or press 'Esc' to retry with the same text. Your progress and results have been saved.";
