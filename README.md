@@ -67,8 +67,8 @@ git clone https://github.com/Mikolonija/typeHero.git
 
 ## Text api
 
-- `Endpoint`: https://random-word-api.herokuapp.com/word?number=42
-- `More info`: https://github.com/RazorSh4rk/random-word-api/
+- `Endpoint`: https://random-word-api.vercel.app/api?words=42
+- `More info`: https://random-word-api.vercel.app/
 
 ## Description of folders and files
 
